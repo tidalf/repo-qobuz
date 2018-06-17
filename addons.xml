@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="script.module.werkzeug" name="werkzeug" provider-name="werkzeug" version="0.11.15">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>werkzeug</summary>
+    <description>The Swiss Army knife of Python web development</description>
+    <platform>all</platform>
+    <language />
+    <license>BSD</license>
+    <forum />
+    <website>http://werkzeug.pocoo.org/</website>
+    <source>https://pypi.python.org/packages/fe/7f/6d70f765ce5484e07576313897793cb49333dd34e462488ee818d17244af/Werkzeug-0.11.15.tar.gz#md5=cb4010478dd33905f95920e4880204a2</source>
+    <email />
+  </extension>
+</addon><addon id="script.module.flask" name="flask" provider-name="flask" version="0.0.12">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+    <import addon="script.module.werkzeug" version="0.11.15" />
+    <import addon="script.module.itsdangerous" version="0.24" />
+    <import addon="script.module.markupsafe" version="0.23" />
+    <import addon="script.module.jinja2" version="2.9.5" />
+    <import addon="script.module.click" version="6.7" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Flask</summary>
+    <description>A microframework based on Werkzeug, Jinja2 and good intentions</description>
+    <platform>all</platform>
+    <language />
+    <license>BSD</license>
+    <forum />
+    <website>http://github.com/pallets/flask/</website>
+    <source>https://pypi.python.org/packages/4b/3a/4c20183df155dd2e39168e35d53a388efb384a512ca6c73001d8292c094a/Flask-0.12.tar.gz#md5=c1d30f51cff4a38f9454b23328a15c5a</source>
+    <email />
+  </extension>
+</addon><addon id="plugin.audio.qobuz" name="Qobuz" provider-name="d@corp" version="1.3.3">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0" />
+		<import addon="script.module.requests" version="1.0.4" />
+		<import addon="script.module.flask" version="0.12" />
+                <import addon="script.module.kodi-six" version="0.0.2" />
+	</requires>
+	<extension library="default.py" point="xbmc.python.pluginsource">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="be">Qobuz addon for Kodi.</summary>
+		<summary lang="da">Qobuz addon til Kodi.</summary>
+		<summary lang="de">Qobuz Addon für Kodi</summary>
+		<summary lang="el">Πρόσθετο του Qobuz για το Kodi.</summary>
+		<summary lang="en">Qobuz addon for Kodi.</summary>
+		<summary lang="es">Complemento Qobuz para Kodi.</summary>
+		<summary lang="fa_IR">Qobuz افزودنی برای Kodi.</summary>
+		<summary lang="fr">Extension Qobuz pour Kodi</summary>
+		<summary lang="gl">Complemento Qobuz para Kodi.</summary>
+		<summary lang="he">הרחבת Qobuz עבור Kodi.</summary>
+		<summary lang="it">Qobuz addon per Kodi.</summary>
+		<summary lang="nl">Qobuz addon voor Kodi</summary>
+		<summary lang="pl">Wtyczka Qobuz dla Kodi.</summary>
+		<summary lang="pt">Addon Qobuz para o Kodi.</summary>
+		<summary lang="pt_BR">Addon Qobuz para Kodi.</summary>
+		<summary lang="sk">Qobuz doplnok pre Kodi.</summary>
+		<summary lang="sv">Qobuz-tillägg för Kodi.</summary>
+		<description lang="be">Qobuz addon for Kodi
+It enables access to Qobuz music streaming service.
+You should enter your Qobuz username and password in the addon settings and you need a valid subscription.
+(This application uses the Qobuz API but is not certified by Qobuz.)</description>
+		<description lang="da">Qobuz-addon til Kodi
+Den muliggør ⏎ »»»adgang til Qobuz' musik-streaming-service.⏎ »»»Indtast dit Qobuz-brugernavn og password i addon'ens ⏎ »»»indstillinger, og du behøver en gyldig tilmelding.»»»(Dette program anvender Qobuz' API, men er ikke certificeret af Qobuz.)</description>
+		<description lang="de">Qobuz addon für Kodi
+ [CR]das dir den Zugriff auf den Qobuz Streaming-Service ermöglicht. [CR]
+Du benötigst ein gültiges Abonnement und must deinen Benutzer mit Kennwort hinterlegen.[CR]
+(Dieses Programm benutzt die Qobuz API, ist aber nicht zertifiziert).</description>
+		<description lang="el">Πρόσθετο του Qobuz για το Kodi
+Σας δίνει 
+πρόσβαση στην υπηρεσία μουσικών ροών του Qobuz. 
+Πρέπει να εισάγετε το όνομα χρήστη και τον κωδικό πρόσβασής σας
+στις ρυθμίσεις του πρόσθετου, και απαιτείται μια έγκυρη συνδρομή. 
+(Αυτή η εφαρμογή χρησιμοποιεί το API του Qobuz, αλλά δεν είναι εγκεκριμένη από το Qobuz.)</description>
+		<description lang="en">Qobuz for Kodi.
+This addon enables access to Qobuz music streaming service.
+(This application uses the Qobuz API but is not certified by Qobuz.)</description>
+		<description lang="es">Qobuz, complemento para Kodi
+Permite 
+acceder al servicio de música Qobuz. 
+Introduce tu usuario y contraseña de Qobuz en los
+ajustes, necesitas una suscripción válida. 
+(Esta aplicación usa la API de Qobuz pero no está certificada por Qobuz.)</description>
+		<description lang="fr">Qobuz pour Kodi.
+Cet addon permet d'accéder à l'ensemble du service streaming de Qobuz.
+(This application uses the Qobuz API but is not certified by Qobuz.)</description>
+		<description lang="gl">Complemento Qobuz para Kodi
+ Habilita o 
+acceso ao servizo de transmisión de música de Qobuz. 
+Ten de introducir o seu nome de usuario e contrasinal na
+configuración mais unha subscrición válida. 
+(Esta aplicación fai uso do API de Qobuz pero non está certificada.)</description>
+		<description lang="he">הרחבת Qobuz עבור Kodi
+ ההרחבה מאפשרת 
+ גישה אל שירותי הזרמת המוזיקה של Qobuz. 
+תצטרך להזין שם משתמש וסיסמת Qobuz בהגדרות
+			ההרחבה ויש צורך במנוי תקף. 
+			(אפליקציה זו משתמשת ב-API של Qobuz אך אינה אושרה רשמית ע"י Qobuz.)</description>
+		<description lang="it">Addon Qobuz per Kodi
+ Abilita ⏎ »»»accedi al servizio Qobuz music streaming. ⏎ »»»Dovresti inserire il nome utente e password Qobuz nelle impostazioni dell'addon⏎ »»» ed hai bisogno di una sottoscrizione valida . ⏎ »»»(Questa applicazione usa l'api Qobuz ma non è certificata da Qobuz.)</description>
+		<description lang="nl">Qobuz add-on voor Kodi
+ het stelt beschikbaar ⏎
+⇥⇥⇥entree tot de Qobuz music streaming diensten. ⏎
+⇥⇥⇥je moet jou Qobuz username and password invullen in de add-on⏎
+⇥⇥⇥instellingen en je hebt een geldige inschrijving nodig. ⏎
+⇥⇥⇥(deze applicatie gebruik de Qobuz API maar is niet gecertificeerd door Qobuz.)</description>
+		<description lang="pl">Wtyczka Qobuz.
+Umożliwia dostęp do muzycznego strumienia Qobuz. 
+Trzeba podać użytkownika i hasło Qobuzz w ustawieniach wtyczki
+oraz posiadać ważny abonament. 
+(Ta aplikacja używa Qobuz API, ale nie jest certyfikowana przez Qobuz.)</description>
+		<description lang="pt">Addon Qobuz para o Kodi
+ Permite 
+ aceder ao serviço de transmissão de músicas do Qobuz. 
+Deve introduzir o seu nome de utilizador e palavra-passe nas definições
+do addon. É necessário ter uma subcrição válida. 
+(Esta aplicação usa a API do Qobuz mas não é certificada pelo Qobuz.)</description>
+		<description lang="pt_BR">Addon Qobuz para Kodi
+Se ativo acesse o serviço de streaming de músicas do Qobuz. Você deve entrar com seu nome de usuário e senha nas configurações do addon, e você necessita também possuir uma subscrição válida. (Esta aplicação usa a API do Qobuz API mas não é certificada por Qobuz.)</description>
+		<description lang="sk">Qobuz doplnok pre Kodi
+
+Povoľuje prístup k Qobuz streamovacej službe.
+Mali by ste zadať Vaše Qobuz užívateľské meno a heslo v nastaveniach doplnku a potrebujete platné predplatné.
+(Táto aplikácie používa Qobuz API, ale nie je certifikovaná od Qobuz.)</description>
+		<description lang="sv">Qobuz tillägg för Kodi
+ Det ger 
+»»»åtkomst till Qobuz musikströmningstjänst.
+»»»Du måste ange ditt Qobuz användarnamn och lösenord i tilläggs-
+»»»inställningarna och du behöver en giltig prenumeration.
+»»»(Denna applikation använder Qobuz API, men är inte certifierad av Qobuz.)</description>
+		<language>en fr</language>
+		<platform>all</platform>
+                <forum>http://forum.kodi.tv/showthread.php?tid=146568</forum>
+                <source>https://github.com/tidalf/plugin.audio.qobuz</source>
+
+	</extension>
+  <extension library="resources/lib/qobuz/extension/kooli/kooli/script/kooli-xbmc-service.py" point="xbmc.service" start="login" />
+
+<extension point="kodi.context.item">
+  <menu id="kodi.core.main">
+	    <item library="resources/lib/qobuz/context/albums_by_artist.py">
+	      <label>30030</label>
+	      <visible>Container.Content(songs)|Container.Content(albums)|Container.Content(artists)</visible>
+	    </item>
+  </menu>
+</extension>
+
+</addon><addon id="script.module.click" name="click" provider-name="click" version="0.6.7">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Click</summary>
+    <description>A simple wrapper around optparse for powerful command line utilities</description>
+    <platform>all</platform>
+    <language />
+    <license>BSD</license>
+    <forum />
+    <website>http://github.com/mitsuhiko/click</website>
+    <source>https://pypi.python.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz#md5=fc4cc00c4863833230d3af92af48abd4</source>
+    <email />
+  </extension>
+</addon><addon id="script.module.werkzeug" name="werkzeug" provider-name="werkzeug" version="0.11.15">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>werkzeug</summary>
+    <description>The Swiss Army knife of Python web development</description>
+    <platform>all</platform>
+    <language />
+    <license>BSD</license>
+    <forum />
+    <website>http://werkzeug.pocoo.org/</website>
+    <source>https://pypi.python.org/packages/fe/7f/6d70f765ce5484e07576313897793cb49333dd34e462488ee818d17244af/Werkzeug-0.11.15.tar.gz#md5=cb4010478dd33905f95920e4880204a2</source>
+    <email />
+  </extension>
+</addon><addon id="script.module.jinja2" name="jinja2" provider-name="jinja2" version="2.9.5">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>jinja2</summary>
+    <description>A small but fast and easy to use stand-alone template engine written in pure python</description>
+    <platform>all</platform>
+    <language />
+    <license>BSD</license>
+    <forum />
+    <website>http://jinja.pocoo.org/</website>
+    <source>https://pypi.python.org/packages/71/59/d7423bd5e7ddaf3a1ce299ab4490e9044e8dfd195420fc83a24de9e60726/Jinja2-2.9.5.tar.gz#md5=9e55f0db6620dd99a1b366183a94270d</source>
+    <email />
+  </extension>
+</addon></addons>
