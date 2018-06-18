@@ -1,5 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="script.module.werkzeug" name="werkzeug" provider-name="werkzeug" version="0.11.15">
+<addons><addon id="script.module.click" name="click" provider-name="click" version="0.6.7">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Click</summary>
+    <description>A simple wrapper around optparse for powerful command line utilities</description>
+    <platform>all</platform>
+    <language />
+    <license>BSD</license>
+    <forum />
+    <website>http://github.com/mitsuhiko/click</website>
+    <source>https://pypi.python.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz#md5=fc4cc00c4863833230d3af92af48abd4</source>
+    <email />
+  </extension>
+</addon><addon id="script.module.werkzeug" name="werkzeug" provider-name="werkzeug" version="0.11.15">
   <requires>
     <import addon="xbmc.python" version="2.14.0" />
   </requires>
@@ -19,10 +35,10 @@
   <requires>
     <import addon="xbmc.python" version="2.14.0" />
     <import addon="script.module.werkzeug" version="0.11.15" />
-    <import addon="script.module.itsdangerous" version="0.24" />
-    <import addon="script.module.markupsafe" version="0.23" />
+    <import addon="script.module.itsdangerous" version="0.0.24" />
+    <import addon="script.module.markupsafe" version="0.0.23" />
     <import addon="script.module.jinja2" version="2.9.5" />
-    <import addon="script.module.click" version="6.7" />
+    <import addon="script.module.click" version="0.6.7" />
   </requires>
   <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
@@ -40,7 +56,7 @@
 	<requires>
 		<import addon="xbmc.python" version="2.14.0" />
 		<import addon="script.module.requests" version="1.0.4" />
-		<import addon="script.module.flask" version="0.12" />
+		<import addon="script.module.flask" version="0.0.12" />
                 <import addon="script.module.kodi-six" version="0.0.2" />
 	</requires>
 	<extension library="default.py" point="xbmc.python.pluginsource">
@@ -153,38 +169,6 @@ Mali by ste zadať Vaše Qobuz užívateľské meno a heslo v nastaveniach dopln
   </menu>
 </extension>
 
-</addon><addon id="script.module.click" name="click" provider-name="click" version="0.6.7">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Click</summary>
-    <description>A simple wrapper around optparse for powerful command line utilities</description>
-    <platform>all</platform>
-    <language />
-    <license>BSD</license>
-    <forum />
-    <website>http://github.com/mitsuhiko/click</website>
-    <source>https://pypi.python.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz#md5=fc4cc00c4863833230d3af92af48abd4</source>
-    <email />
-  </extension>
-</addon><addon id="script.module.werkzeug" name="werkzeug" provider-name="werkzeug" version="0.11.15">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <summary>werkzeug</summary>
-    <description>The Swiss Army knife of Python web development</description>
-    <platform>all</platform>
-    <language />
-    <license>BSD</license>
-    <forum />
-    <website>http://werkzeug.pocoo.org/</website>
-    <source>https://pypi.python.org/packages/fe/7f/6d70f765ce5484e07576313897793cb49333dd34e462488ee818d17244af/Werkzeug-0.11.15.tar.gz#md5=cb4010478dd33905f95920e4880204a2</source>
-    <email />
-  </extension>
 </addon><addon id="script.module.jinja2" name="jinja2" provider-name="jinja2" version="2.9.5">
   <requires>
     <import addon="xbmc.python" version="2.14.0" />
@@ -199,6 +183,38 @@ Mali by ste zadať Vaše Qobuz užívateľské meno a heslo v nastaveniach dopln
     <forum />
     <website>http://jinja.pocoo.org/</website>
     <source>https://pypi.python.org/packages/71/59/d7423bd5e7ddaf3a1ce299ab4490e9044e8dfd195420fc83a24de9e60726/Jinja2-2.9.5.tar.gz#md5=9e55f0db6620dd99a1b366183a94270d</source>
+    <email />
+  </extension>
+</addon><addon id="script.module.markupsafe" name="markupsafe" provider-name="markupsafe" version="0.0.23">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>markupsafe</summary>
+    <description>Implements a XML/HTML/XHTML Markup safe string for Python</description>
+    <platform>all</platform>
+    <language />
+    <license>BSD</license>
+    <forum />
+    <website>http://github.com/mitsuhiko/markupsafe</website>
+    <source>https://pypi.python.org/packages/c0/41/bae1254e0396c0cc8cf1751cb7d9afc90a602353695af5952530482c963f/MarkupSafe-0.23.tar.gz#md5=f5ab3deee4c37cd6a922fb81e730da6e</source>
+    <email />
+  </extension>
+</addon><addon id="script.module.itsdangerous" name="itsdangerous" provider-name="itsdangerous" version="0.0.24">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>itsdangerous</summary>
+    <description>Various helpers to pass trusted data to untrusted environments and back.</description>
+    <platform>all</platform>
+    <language />
+    <license>BSD</license>
+    <forum />
+    <website>http://github.com/mitsuhiko/itsdangerous</website>
+    <source>https://pypi.python.org/packages/dc/b4/a60bcdba945c00f6d608d8975131ab3f25b22f2bcfe1dab221165194b2d4/itsdangerous-0.24.tar.gz#md5=a3d55aa79369aef5345c036a8a26307f</source>
     <email />
   </extension>
 </addon></addons>
