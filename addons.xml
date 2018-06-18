@@ -58,6 +58,7 @@
 		<import addon="script.module.requests" version="1.0.4" />
 		<import addon="script.module.flask" version="0.0.12" />
                 <import addon="script.module.kodi-six" version="0.0.2" />
+                <import addon="script.resource.mutagen" version="1.38.1" />
 	</requires>
 	<extension library="default.py" point="xbmc.python.pluginsource">
 		<provides>audio</provides>
@@ -217,4 +218,26 @@ Mali by ste zadať Vaše Qobuz užívateľské meno a heslo v nastaveniach dopln
     <source>https://pypi.python.org/packages/dc/b4/a60bcdba945c00f6d608d8975131ab3f25b22f2bcfe1dab221165194b2d4/itsdangerous-0.24.tar.gz#md5=a3d55aa79369aef5345c036a8a26307f</source>
     <email />
   </extension>
+</addon><addon id="script.resource.mutagen" name="Mutagen" provider-name="robwebset" version="1.38.1">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0" />
+	</requires>
+	<extension library="lib" point="xbmc.python.module" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mutagen - Python multimedia tagging library</summary>
+
+		<description lang="en">Mutagen is a Python module to handle audio metadata. For more information visit http://mutagen.readthedocs.org</description>
+
+		<language />
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum>https://mutagen.readthedocs.io/</forum>
+		<news>Available from the URepo repository</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<banner>resources/banner.jpg</banner>
+			<logo>resources/logo.png</logo>
+		</assets>
+	</extension>
 </addon></addons>
