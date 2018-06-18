@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repo.qobuz"
+       name="Qobuz XBMC Addons"
+       version="1.0.0"
+       provider-name="Tidalf [tidalf@ematome.com]">
+  <extension point="xbmc.addon.repository"
+             name="Qobuz kodi addons Repository">
+    <info compressed="false">https://raw.githubusercontent.com/tidalf/repo-qobuz/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/tidalf/repo-qobuz/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/tidalf/repo-qobuz/master</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Provides Kodi Addons from qobuz</summary>
+    <description>Provides Kodi Addons from qobuz</description>
+  </extension>
+</addon>
+
